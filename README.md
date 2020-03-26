@@ -11,5 +11,4 @@ This repo holds a couple of basic operations executed on a binary tree.
         BTreePrinter.printNode(result);
     }
 ```
-![binary tree printer](https://github.com/am-singh/BinaryTree/blob/master/images/binary_tree_printer.png?raw=true|width=250x250)
-
+<img src="https://github.com/am-singh/BinaryTree/blob/master/images/binary_tree_printer.png" width="250" height="250">
