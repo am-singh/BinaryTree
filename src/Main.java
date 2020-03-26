@@ -1,27 +1,11 @@
 public class Main {
 
     public static void main(String[] args) {
-        TreeNode root = BTreeFactory.buildSmallTree();
-        BTreePrinter.printNode(root);
+        BTreeOperations operator = new BTreeOperations();
+        TreeNode root = BTreeFactory.buildLargeTree();
 
-        TreeNode result = searchBST(root, 2);
+        TreeNode result = operator.searchIteravely(root, 4);
         BTreePrinter.printNode(result);
     }
-
-    static TreeNode searchBST(TreeNode root, int val) {
-
-        if (root == null || val == root.val) {
-            return root;
-        }
-
-        if (val < root.val) {
-            return searchBST(root.left, val);
-        } else {
-            return searchBST(root.right, val);
-        }
-
-    }
-
-
 }
 
